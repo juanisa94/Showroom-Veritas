@@ -54,13 +54,18 @@ export function ProductGrid({ products, onRequestVintedExit }) {
           key={product.id}
           className="group bg-stone-50"
         >
-          <div className="relative aspect-[2/3] w-full overflow-hidden bg-neutral-100">
+          <button
+            type="button"
+            className="relative block aspect-[2/3] w-full overflow-hidden bg-neutral-100 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-4 focus-visible:ring-offset-stone-50"
+            aria-label={`Ver detalles seguros de ${product.name} en Vinted`}
+            onClick={() => onRequestVintedExit(product)}
+          >
             <ProductImage product={product} />
             <div
               className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent opacity-0 transition duration-300 group-hover:opacity-100"
               aria-hidden="true"
             />
-          </div>
+          </button>
           <div className="flex flex-col gap-4 bg-stone-50 pt-5">
             <div>
               <h2 className="text-base font-medium tracking-tight text-neutral-950">

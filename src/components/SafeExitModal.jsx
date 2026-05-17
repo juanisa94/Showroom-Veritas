@@ -4,7 +4,8 @@ import { useFocusTrap } from '../hooks/useFocusTrap.js'
 
 /** @param {string} productName */
 function exitCopy(productName) {
-  return `Hola, le estamos redirigiendo a nuestro escaparate oficial en Vinted para que vea los detalles de ${productName} con total seguridad`
+  const productHint = productName ? ` de ${productName}` : ''
+  return `¡Hola! Estás a punto de salir a nuestro rincón en Vinted para ver los detalles finales${productHint}`
 }
 
 /** @typedef {{ open: boolean, vintedUrl: string, productName: string, onClose: () => void }} SafeExitModalProps */
