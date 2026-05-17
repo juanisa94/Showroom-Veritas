@@ -52,27 +52,32 @@ export function ProductGrid({ products, onRequestVintedExit }) {
       {products.map((product) => (
         <article
           key={product.id}
-          className="group relative overflow-hidden bg-neutral-100"
+          className="group bg-stone-50"
         >
-          <div className="relative aspect-[2/3] w-full">
+          <div className="relative aspect-[2/3] w-full overflow-hidden bg-neutral-100">
             <ProductImage product={product} />
             <div
-              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent opacity-0 transition duration-300 group-hover:opacity-100"
+              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent opacity-0 transition duration-300 group-hover:opacity-100"
               aria-hidden="true"
             />
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 flex flex-col gap-5 p-8 opacity-0 transition duration-300 group-hover:pointer-events-auto group-hover:opacity-100">
-              <div className="text-white">
-                <p className="text-lg font-medium tracking-tight">{product.name}</p>
-                <p className="mt-1 text-sm text-white/85">{product.size}</p>
-              </div>
-              <button
-                type="button"
-                className="pointer-events-auto w-max rounded border border-white/40 bg-white/10 px-6 py-2.5 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
-                onClick={() => onRequestVintedExit(product)}
-              >
-                Ver en Vinted
-              </button>
+          </div>
+          <div className="flex flex-col gap-4 bg-stone-50 pt-5">
+            <div>
+              <h2 className="text-base font-medium tracking-tight text-neutral-950">
+                {product.name}
+              </h2>
+              <p className="mt-1 text-sm text-neutral-500">{product.size}</p>
             </div>
+            <p className="max-h-32 overflow-y-auto scroll-smooth pr-1 text-sm leading-6 text-neutral-600">
+              {product.description}
+            </p>
+            <button
+              type="button"
+              className="min-h-11 w-full rounded border border-neutral-900 px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-950 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 focus-visible:ring-offset-stone-50 active:bg-neutral-800 md:w-max"
+              onClick={() => onRequestVintedExit(product)}
+            >
+              Ver en Vinted
+            </button>
           </div>
         </article>
       ))}
