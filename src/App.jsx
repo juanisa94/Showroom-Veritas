@@ -16,9 +16,6 @@ function App() {
         <h1 className="mt-6 max-w-xl text-3xl font-light tracking-tight text-neutral-900 md:text-4xl">
           Selección curada, presentación serena.
         </h1>
-        <p className="mt-8 max-w-md text-sm leading-relaxed text-neutral-500">
-          Galería de demostración cargada desde <code className="text-neutral-700">src/config/catalog.js</code>.
-        </p>
       </header>
 
       <ProductGrid

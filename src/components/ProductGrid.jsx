@@ -32,7 +32,7 @@ function ProductImage({ product }) {
       srcSet={srcSet}
       sizes="(max-width: 768px) 100vw, 50vw"
       alt={alt}
-      className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+      className="h-full w-full object-contain transition duration-500 group-hover:scale-[1.01]"
       decoding="async"
       loading="lazy"
       onError={() => setFailed(true)}
@@ -52,11 +52,11 @@ export function ProductGrid({ products, onRequestVintedExit }) {
       {products.map((product) => (
         <article
           key={product.id}
-          className="group bg-stone-50"
+          className="group mx-auto w-full max-w-sm bg-stone-50 md:max-w-none"
         >
           <button
             type="button"
-            className="relative block aspect-[2/3] w-full overflow-hidden bg-neutral-100 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-4 focus-visible:ring-offset-stone-50"
+            className="relative block aspect-[4/5] w-full overflow-hidden bg-neutral-100 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-4 focus-visible:ring-offset-stone-50 md:aspect-[2/3]"
             aria-label={`Ver detalles seguros de ${product.name} en Vinted`}
             onClick={() => onRequestVintedExit(product)}
           >
