@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { CATALOG } from './config/catalog.js'
+import { CATALOG } from './data/catalog.js'
 import { BimodalFooter } from './components/BimodalFooter.jsx'
 import { ProductGrid } from './components/ProductGrid.jsx'
 import { SafeExitModal } from './components/SafeExitModal.jsx'

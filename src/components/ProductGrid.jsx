@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-/** @typedef {{ id: number, name: string, size: string, description: string, vintedUrl: string, imageUrl: string }} CatalogItem */
+/** @typedef {{ id: number, name: string, size: string, description: string, price?: string | null, vintedUrl: string, imageUrl: string }} CatalogItem */
 
 /**
  * @param {{ product: CatalogItem }} props
