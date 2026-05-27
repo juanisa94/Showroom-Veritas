@@ -1,6 +1,6 @@
-# Showroom Veritas
+# Calcalen
 
-Vitrina estática ligera (**React** + **Vite** + **Tailwind**) con salida pedagógica a **Vinted**, contacto **bimodal** y enfoque **local-first**.
+Vitrina estática ligera para visitas (**React** + **Vite** + **Tailwind**) con salida pedagógica a **Vinted**, contacto **bimodal** y enfoque **local-first**.
 
 ## Manifiesto de Confianza Veritas
 

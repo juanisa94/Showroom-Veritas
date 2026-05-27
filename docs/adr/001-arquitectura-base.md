@@ -1,4 +1,4 @@
-# ADR 001: Arquitectura Base de Showroom Veritas
+# ADR 001: Arquitectura Base de Calcalen
 
 ## Estado
 
@@ -6,7 +6,7 @@ Aceptado.
 
 ## Contexto
 
-Showroom Veritas es una vitrina web para presentar un catalogo real de prendas y dirigir la compra hacia Vinted con una experiencia clara, ligera y segura. El proyecto prioriza:
+Calcalen es una vitrina web para visitas que presenta un catalogo real de prendas y dirige la compra hacia Vinted con una experiencia clara, ligera y segura. El proyecto prioriza:
 
 - Transparencia radical antes de abandonar el sitio.
 - Privacidad Local-First, sin rastreadores ni analitica externa.
@@ -68,5 +68,5 @@ Esto delega las rutas al cliente y evita errores 404 al refrescar rutas internas
 - Las imagenes del catalogo aparecen en `dist/assets/` con nombres hasheados.
 - `public/_redirects` se copia a `dist/_redirects` durante el build.
 - No existen scripts de analitica externa en la plantilla HTML.
-- El repositorio remoto `origin` apunta a `https://github.com/juanisa94/Showroom-Veritas.git`.
+- El repositorio remoto `origin` debe apuntar al repositorio GitHub `calcalen` cuando se cree o renombre el remoto definitivo.
 

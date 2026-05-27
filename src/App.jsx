@@ -11,10 +11,10 @@ function App() {
     <div className="mx-auto max-w-6xl px-6 pb-24 pt-20 md:px-10 md:pt-28">
       <header className="mb-20 md:mb-28">
         <p className="text-xs font-medium uppercase tracking-[0.28em] text-neutral-500">
-          Showroom Veritas
+          Calcalen
         </p>
         <h1 className="mt-6 max-w-xl text-3xl font-light tracking-tight text-neutral-900 md:text-4xl">
-          Selección curada, presentación serena.
+          Vitrina preparada para visitas, con presentación serena.
         </h1>
       </header>
 
