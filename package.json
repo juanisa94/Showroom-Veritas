@@ -1,12 +1,12 @@
 {
-  "name": "calcalen",
+  "name": "vinted",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:pages": "vite build --base=/calcalen/",
+    "build:pages": "vite build --base=/Showroom-Veritas/",
     "lint": "eslint .",
     "preview": "vite preview"
   },

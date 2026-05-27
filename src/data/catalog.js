@@ -1,4 +1,4 @@
-// Catálogo Real Lotes 1 y 2 - Calcalen
+// Catálogo Real Lotes 1 y 2 - Showroom Veritas
 import prenda1 from '../assets/prenda_1.jpg';
 import prenda2 from '../assets/prenda_2.jpg';
 import prenda3 from '../assets/prenda_3.jpg';

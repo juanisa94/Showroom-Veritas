@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Este manual explica como incorporar un nuevo lote de prendas a Calcalen manteniendo la calidad visual, la privacidad Local-First y la seguridad operativa del escaparate.
+Este manual explica como incorporar un nuevo lote de prendas a Showroom Veritas manteniendo la calidad visual, la privacidad Local-First y la seguridad operativa del escaparate.
 
 La idea es sencilla: cada lote nuevo debe entrar con imagenes limpias, datos verificados, enlaces correctos y una publicacion reproducible desde Git.
 
