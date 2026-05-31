@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { CATALOG } from './data/catalog.js'
-import { BimodalFooter } from './components/BimodalFooter.jsx'
 import { ProductGrid } from './components/ProductGrid.jsx'
 import { SafeExitModal } from './components/SafeExitModal.jsx'
 
@@ -25,7 +24,12 @@ function App() {
         }
       />
 
-      <BimodalFooter />
+      <footer className="mt-32 border-t border-neutral-200 pt-16 pb-20 text-center text-sm text-neutral-500">
+        <p>
+          Compromiso local-first: esta vitrina prioriza activos servidos desde su propio origen y evita rastreadores
+          o analítica de terceros.
+        </p>
+      </footer>
 
       <SafeExitModal
         open={exitTarget !== null}
